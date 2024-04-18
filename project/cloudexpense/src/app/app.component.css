@@ -1,0 +1,12 @@
+/* Style the header */
+.header {
+    background-color: rgb(119, 186, 227); 
+    color: white; 
+    padding: 20px; /* Increased padding for better visual separation */
+    margin: 0; /* Added margin to eliminate unwanted spacing outside the header */
+    box-sizing: border-box; 
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  

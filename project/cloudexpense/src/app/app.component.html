@@ -1,0 +1,20 @@
+<div class="header">
+  <h1>Cloud Expense</h1>
+</div>
+<br>
+<br>
+<div class="tab">
+  <button class="tablinks" (click)="openTab('upload')">Upload Bills</button> &nbsp;&nbsp;&nbsp;&nbsp;
+  <button class="tablinks" (click)="openTab('view')">View Expenses</button>
+</div>
+<br>
+<br>
+<div id="upload" class="tabcontent" *ngIf="selectedTab === 'upload'">
+  <input type="file" class="file-upload" (change)="onFileChanged($event)">
+  <button type="button" (click)="onUpload()">Upload</button>
+</div>
+
+<div id="view" class="tabcontent" *ngIf="selectedTab === 'view'">
+  <!-- Content for View Expenses tab -->
+  <p>View your expenses here.</p>
+</div>

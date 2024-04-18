@@ -1,0 +1,7 @@
+#AWS credentials
+aws:
+  s3:
+
+application:
+  bucket:
+    name: cloudexpenses
