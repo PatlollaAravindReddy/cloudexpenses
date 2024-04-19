@@ -1,6 +1,10 @@
 #AWS credentials
 aws:
+  accessKey: AKIA5FTZE4OVR3I42KVW
+  secretKey: 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
+  region: us-east-2
   s3:
+    bucket: cloudexpenses
 
 application:
   bucket:
