@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'cloudexpense';
   selectedTab: string = 'upload';
   selectedFile: File | any = null;
+  uploadStatus: boolean = false;
 
   constructor(private http: HttpClient) {}
   
@@ -19,13 +20,13 @@ export class AppComponent {
     headers.append('Content-Type', 'image/jpeg');
     formData.append('file', this.selectedFile, this.selectedFile.name);
 
-     this.http.post('http://ec2-3-144-80-217.us-east-2.compute.amazonaws.com:8080/api/upload', formData)
+     this.http.post('http://ec2-18-188-232-157.us-east-2.compute.amazonaws.com:8080/api/upload', formData)
       .subscribe(response => {
         console.log('Image uploaded successfully:', response);
        }, error => {
          console.error('Error uploading image:', error);
        });
-       alert("Uploaded Successfully");
+       alert("Image uploaded successfully");
   }
 
   onFileChanged(event : any) {
