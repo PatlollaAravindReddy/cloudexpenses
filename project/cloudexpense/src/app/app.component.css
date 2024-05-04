@@ -9,4 +9,32 @@
     margin-left: -10px;
     margin-right: -10px;
   }
+  table {
+    width: 100%; /* Make the table fill the available width */
+    border-collapse: collapse; /* Remove borders between table cells */
+  }
   
+  th, td {
+    padding: 10px; /* Add some padding for readability */
+    text-align: left; /* Align content to the left */
+    border: 1px solid #ddd; /* Add a thin border to each cell */
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Light gray background for table headers */
+    font-weight: bold; /* Make headers bolder */
+  }
+  
+  /* Subtotal, tax, and total styling */
+  p {
+    margin-bottom: 10px; /* Add some space between paragraphs */
+  }
+  
+  .total {
+    font-weight: bold; /* Make total amount bolder */
+  }
+  
+  /* Button styling (assuming Bootstrap is used) */
+  .btn-primary {
+    /* Use default Bootstrap button styles */
+  }
